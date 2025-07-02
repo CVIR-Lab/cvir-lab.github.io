@@ -1,44 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Vision4Space</title>
-    <meta name="keywords" content="Vision4Space" />
-    <meta name="description" content="" />
-    <meta name="author" content="Haoyuan He" />
-    <link rel="stylesheet" href="css/style.css">
+    <title>CVIR Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/jpg" href="/images/favicon/favicon.jpg">
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/main.css">
+
 </head>
 
-<body>
+<body class="index-home">
+<!-- 顶部导航栏 -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">CVIR Lab @ CUST</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-main">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="/index.html">Home</a></li>
+                <!-- 改成下拉菜单的 Group -->
+                <li class="dropdown">
+                    <a href="/Group" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Group <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/Group/leader.html">Leader</a></li>
+                        <li><a href="/Group/PhdAndMsc.html">PhD Student and Msc Student</a></li>
+                        <li><a href="/Group/alumni.html">Alumni</a></li>
+                        <li><a href="/Group/collaborators.html">Collaborators</a></li>
+                        <li><a href="/Group/visandbsc.html">Bachelor students and Visitors</a></li>
+                    </ul>
+                </li>
+                <li><a href="/research.html">Research</a></li>
+                <li><a href="/publications.html">Publications</a></li>
+                <li><a href="/dataset.html">Datasets</a></li>
+                <li><a href="/News.html">News and Events</a></li>
+                <li><a href="/workshop.html">Workshop</a></li>
+                <li><a href="https://cvirlab.cn2.quickconnect.cn">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-<!--head-->
-<div class="Vision4Space-navbar-brand">
-    <a class="Vision4Space-logo" href="index.html">Vision4Space</a>
-    <img src="imgs/cust-logo.png" class="school-logo">
+
+<!-- 主体部分：两栏 -->
+<div class="container">
+    <div class="row">
+        <!-- ===== 主内容 ===== -->
+        <div class="col-md-8 main-content">
+            <!-- 轮播图 -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/images/Group2015.png" alt="Banner 1">
+                        <div class="slide-caption">Towards Sustainability and Resiliency of Field Robotics</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="/workshop.html" target="_blank">
+                        <img src="/images/Group05022015.jpg" alt="Banner 2">
+                        <div class="slide-caption">Join Our IROS 2025 Workshop!</div>
+                        </a>
+                    </div>
+                    <!-- 更多图片可继续添加 -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- 介绍内容 -->
+            <h1>Welcome to the CVIR Lab</h1>
+            <p>
+                We are a dynamic research group as a part of Optoelectronic Measurement and Analysis Center at the
+                <a href="https://en.cust.edu.cn/" target="_blank">Changchun University of Science and Technology(CUST)</a>.
+                Our aim is to explore and understand the computer vision issues associated with robots. Research in this group
+                mainly concerned with solving problems that require a mixture of computer vision, mechanics and robots to adapt
+                to unknown and dynamic situations, especially the outspace and planetary environment, and boost collaboration
+                between people and devices.
+            </p>
+            <p>
+                To this end, we develop novel methods to detect objects on Mars for the rovers. We want to be able to build
+                the perfect techniques to address the scientific questions we deem most important (see <a href="/research/">Research</a>).
+            </p>
+            <p>
+                We are located at CUST, the birthplace of optical engineering in China. As a part of Optoelectronic Measurement
+                and Analysis Center, we exchange ideas and work with our colleagues on topics like Bionic optics, Bionic robot
+                and Computational imaging, as well as other interesting yet challenging topics.
+            </p>
+            <p>
+                <strong style="font-size:16px;">
+                    We are looking for passionate new Researcher, Phd, Master and Undergraduate students to join the group
+                    (<a href="/people/">more info</a>) !
+                </strong>
+            </p>
+            <!-- LOGO栏 -->
+            <div class="lab-logos">
+                <img src="/images/logopic/cust-logo.png" alt="CUST">
+                <img src="/images/logopic/oe.png" alt="School of Opto-Electronic">
+                <img src="/images/homepic/cvirlogofill.jpg" alt="CVIR Lab">
+                <img src="/images/homepic/newcvirlogo2.jpg" alt="Robot Lab">
+            </div>
+        </div>
+
+        <!-- ===== 侧边新闻栏 =====  最好只放十一个-->
+        <div class="col-md-4"  style="margin-top:25px;">
+            <div class="side-news">
+                <h4>News</h4>
+                <ul class="news-list">
+                    <li><span class="news-date">12. May 2025</span>
+                        We will host a <a href="workshop.html">workshop</a> on IROS2025.
+                    </li>
+                    <li><span class="news-date">30. Apr 2025</span>
+                        Welcome Siyu Yu!
+                    </li>
+                    <li><span class="news-date">07. Nov 2024</span>
+                        Our paper is published in <a href="#">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</a>.
+                    </li>
+                    <li><span class="news-date">20. Oct 2024</span>
+                        Welcome Hongze Li!
+                    </li>
+                    <li><span class="news-date">20. Jun 2024</span>
+                        Our paper is published in <a href="#">ISPRS Journal of Photogrammetry and Remote Sensing</a>.
+                    </li>
+                    <li><span class="news-date">09. May 2024</span>
+                        Our paper is published in <a href="#">Advances in Space Research</a>.
+                    </li>
+                    <li><span class="news-date">12. Apr 2024</span>
+                        Welcome Qingeng Li!
+                    </li>
+                    <li><span class="news-date">6. Dec 2023</span>
+                        Xueming Xiao will host a session at <a href="#">IEEE Industrial Electronics Society Annual Online Conference 2023</a>.
+                    </li>
+                    <li><span class="news-date">4. Dec 2023</span>
+                        Xueming Xiao will give a session talk at <a href="#">首届航天领域高层次青年学者论坛 2023</a>.
+                    </li>
+                    <li><span class="news-date">16. Oct 2023</span>
+                        Xueming Xiao will give a session talk at <a href="http://cssa2023.cssr.org.cn/meeting/cssa2023/"> CSSA 2023 </a>.
+                    </li>
+                    <li><span class="news-date">17. Sep 2023</span>
+                        Xueming Xiao will host a session(AI for Space Robot Control and Situation Awareness) at <a href="https://www.icasd.cn/index/index.html"> International Conference on Aerospace Structural Dynamics 2023 </a>.
+                    </li>
+
+                </ul>
+                <a class="news-more" href="/News.html">... see all News</a>
+            </div>
+        </div>
+    </div>
 </div>
 
-<!--Nav-->
-<div class="Nav">
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active_home">Home</a></li>
-            <li><a href="index.html" class="active">Info</a></li>
-            <li><a href="index.html" class="active">Publication</a></li>
-            <li><a href="index.html" class="active">Dataset</a></li>
-        </ul>
-    </nav>
-</div>
+<footer>
+    © 2025 Computer Vision and Intelligent Robotics Lab @ CUST
+</footer>
 
-
-<!--Introduce-->
-<div class="Home-Introduce">
-
-</div>
-
-
-
-
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: { delay: 3200, disableOnInteraction: false },
+        pagination: { el: ".swiper-pagination", clickable: true },
+        effect: "slide",
+        speed: 700,
+    });
+</script>
 </body>
 </html>

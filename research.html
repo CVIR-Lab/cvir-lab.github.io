@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research - CVIR Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpg" href="/images/favicon/favicon.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+<!--    这一页的样式写在页面内了-->
+    <style>
+        body { background: #f8fafc; }
+        .research-header {
+            width: 100%;
+            background: linear-gradient(90deg, #1756aa 60%, #bfe9ff 100%);
+            color: #fff;
+            padding: 58px 0 36px 0;
+            text-align: center;
+            margin-bottom: 38px;
+        }
+        .research-header h1 { font-size: 2.9em; font-weight: 800; margin-bottom: 10px; }
+        .research-header p { font-size: 1.25em; color: #e8f2ff; }
+
+        .research-list { max-width: 1050px; margin: 0 auto; }
+        .research-card {
+            display: flex; align-items: center; margin-bottom: 52px;
+            background: #fff; border-radius: 16px; box-shadow: 0 3px 22px #b5cbdb21;
+            overflow: hidden; min-height: 245px;
+            transition: box-shadow .18s;
+        }
+        .research-card:hover { box-shadow: 0 8px 36px #aac5e646; }
+        .research-img {
+            width: 44%; min-width: 220px; max-height: 245px; object-fit: cover;
+            background: #e8eef2; display: block;
+        }
+        .research-content {
+            flex: 1; padding: 32px 38px 22px 38px;
+            display: flex; flex-direction: column; justify-content: center;
+        }
+        .research-title {
+            font-size: 1.45em; font-weight: 700; color: #1756aa; margin-bottom: 10px;
+        }
+        .research-desc { color: #333; font-size: 1.12em; line-height: 1.8; }
+        .research-tag {
+            display: inline-block; background: #e4f1ff; color: #217ee6; border-radius: 8px;
+            font-size: .98em; padding: 3px 12px; margin-bottom: 10px; font-weight: 600;
+            letter-spacing: .03em;
+        }
+        @media (max-width: 900px) {
+            .research-card { flex-direction: column; min-height: unset; }
+            .research-img { width: 100%; max-height: 180px; }
+            .research-content { padding: 22px 18px 18px 18px; }
+        }
+        @media (max-width: 480px) {
+            .research-header h1 { font-size: 1.7em;}
+            .research-content { padding: 18px 4vw 12px 4vw;}
+        }
+    </style>
+
+
+
+</head>
+<body>
+<!-- ======= 顶部导航栏同主站 ======= -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">CVIR Lab @ CUST</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-main">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="/Group" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Group <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/Group/leader.html">Leader</a></li>
+                        <li><a href="/Group/PhdAndMsc.html">PhD Student and Msc Student</a></li>
+                        <li><a href="/Group/alumni.html">Alumni</a></li>
+                        <li><a href="/Group/collaborators.html">Collaborators</a></li>
+                        <li><a href="/Group/visandbsc.html">Bachelor students and Visitors</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="/research.html">Research</a></li>
+                <li><a href="/publications.html">Publications</a></li>
+                <li><a href="/dataset.html">Datasets</a></li>
+                <li><a href="/News.html">News and Events</a></li>
+                <li><a href="/workshop.html">Workshop</a></li>
+                <li><a href="https://cvirlab.cn2.quickconnect.cn">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ======= 顶部大横幅 ======= -->
+<div class="research-header">
+    <h1>Research at CVIR Lab</h1>
+    <p>Innovating computer vision, robotics and bionics for space, industry, and society.<br>Explore our core research directions below.</p>
+</div>
+
+<div class="research-list">
+    <!-- 研究方向1 -->
+    <div class="research-card">
+        <img class="research-img" src="/images/pubpic/rockformer.png" alt="Planetary Rover">
+        <div class="research-content">
+            <div class="research-tag">Planetary Exploration</div>
+            <div class="research-title">Object Detection for Planetary Rover & Orbiter</div>
+            <div class="research-desc">
+                We focus on perception, planning, learning and control for planetary surface exploration. Our work spans algorithm design and experiments for rovers on Mars and other planets, supporting real-world space missions. We are also developing detection methods for space debris to enhance spacecraft safety.
+            </div>
+        </div>
+    </div>
+
+    <!-- 研究方向2 -->
+    <div class="research-card">
+        <img class="research-img" src="/images/prepic/modular_robot.png" alt="Bionic Vision">
+        <div class="research-content">
+            <div class="research-tag" style="background:#fff3e0;color:#f49b1f;">Bionic Optics</div>
+            <div class="research-title">Bionic Optics & Bio-inspired Robots</div>
+            <div class="research-desc">
+                How do insects use compound eyes for perception? We explore neural network models and high-speed obstacle avoidance inspired by biological systems, aiming to build smarter robots. Our research combines visual neuroscience and robotics to push the boundaries of bionic design.
+            </div>
+        </div>
+    </div>
+
+    <!-- 研究方向3 -->
+    <div class="research-card">
+        <img class="research-img" src="/images/researchimage/RoboM.jpg" alt="Robotics Competition">
+        <div class="research-content">
+            <div class="research-tag" style="background:#f0faff;color:#2daaaa;">Student Projects</div>
+            <div class="research-title">Robotics Competitions & Student Projects</div>
+            <div class="research-desc">
+                We participate in Robomaster and run Open Projects for students, including object detection & segmentation, object tracking, and non-contact medical measurement using UAVs/UGVs. Our group fosters creativity and engineering skills through hands-on robotics experience.
+            </div>
+        </div>
+    </div>
+
+    <!-- 研究方向4 -->
+    <div class="research-card">
+        <img class="research-img" src="/images/researchimage/res4.jpg" alt="Collaboration">
+        <div class="research-content">
+            <div class="research-tag" style="background:#f0f4fc;color:#3b61c9;">Interdisciplinary</div>
+            <div class="research-title">Interdisciplinary Vision & Collaboration</div>
+            <div class="research-desc">
+                We collaborate across computer vision, robotics, optics, and machine learning, encouraging interdisciplinary research for intelligent space exploration and real-world robotics challenges.
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2025 Computer Vision and Intelligent Robotics Lab @ CUST
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

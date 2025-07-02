@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>News - CVIR Lab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/jpg" href="/images/favicon/favicon.jpg">
+
+	<!-- Bootstrap & CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body class="news-page">
+
+<!-- 导航栏 -->
+<!--<nav class="navbar navbar-default navbar-fixed-top">-->
+<!--	<div class="container">-->
+<!--		<div class="navbar-header">-->
+<!--			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">-->
+<!--				<span class="sr-only">Toggle navigation</span>-->
+<!--				<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>-->
+<!--			</button>-->
+<!--			<a class="navbar-brand" href="/">CVIR Lab @ CUST</a>-->
+<!--		</div>-->
+<!--		<div class="collapse navbar-collapse" id="navbar-main">-->
+<!--			<ul class="nav navbar-nav navbar-right">-->
+<!--				<li><a href="index.html">Home</a></li>-->
+<!--				<li><a href="/people/">People</a></li>-->
+<!--				<li><a href="/research/">Research</a></li>-->
+<!--				<li><a href="/publications/">Publications</a></li>-->
+<!--				<li><a href="/datasets/">Datasets</a></li>-->
+<!--				<li class="active"><a href="news.html">News and Events</a></li>-->
+<!--				<li><a href="workshop.html">Workshop</a></li>-->
+<!--				<li><a href="https://cvirlab.cn2.quickconnect.cn">Login</a></li>-->
+<!--			</ul>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</nav>-->
+
+<!-- 顶部导航栏复用你现有结构 -->
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">CVIR Lab @ CUST</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-main">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="/index.html">Home</a></li>
+				<li class="dropdown">
+					<a href="/Group" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						Group <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="/Group/leader.html">Leader</a></li>
+						<li><a href="/Group/PhdAndMsc.html">PhD Student and Msc Student</a></li>
+						<li><a href="/Group/alumni.html">Alumni</a></li>
+						<li><a href="/Group/collaborators.html">Collaborators</a></li>
+						<li><a href="/Group/visandbsc.html">Bachelor students and Visitors</a></li>
+					</ul>
+				</li>
+				<li><a href="/research.html">Research</a></li>
+				<li><a href="/publications.html">Publications</a></li>
+				<li><a href="/dataset.html">Datasets</a></li>
+				<li class="active"><a href="/News.html">News and Events</a></li>
+				<li><a href="/workshop.html">Workshop</a></li>
+				<li><a href="https://cvirlab.cn2.quickconnect.cn">Login</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- 新闻部分 -->
+<div class="container" style="margin-top:40px;">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<h1>News</h1>
+			<ul class="news-list all-news" id="news-list">
+				<!-- 把所有新闻都写进来，JS控制分页显示 -->
+
+				<!-- 新闻开始 -->
+
+				<!--有图片的-->
+				<li class="news-item with-img">
+					<div class="news-img">
+						<img src="/images/workshop/123456.png" alt="News">
+                           <!--有图片的图片在上一句修改   src=""-->
+					</div>
+					<div class="news-body">
+						<span class="news-date">12. May 2025</span>
+						<!--日期-->
+						<span>We will host a <a href="workshop.html">workshop</a> on IROS2025.</span>
+						<!--这里的上一句是超链接，跳转页面   href=""-->
+					</div>
+				</li>
+
+				<!--没图片的-->
+				<li class="news-item">
+					<span class="news-date">30. Apr 2025</span>
+					Welcome Siyu Yu!
+				</li>
+
+
+				<li class="news-item with-img">
+					<div class="news-img">
+						<img src="/images/workshop/123456.png" alt="News">
+					</div>
+					<div class="news-body">
+						<span class="news-date">07. Nov 2024</span>
+						<span>Our paper is published in <a href="#">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</a>.</span>
+					</div>
+				</li>
+
+				<li><span class="news-date">20. Oct 2024</span> Welcome Hongze Li!</li>
+				<li><span class="news-date">20. Jun 2024</span> Our paper is published in <a href="#">ISPRS Journal of Photogrammetry and Remote Sensing</a>.</li>
+				<li><span class="news-date">09. May 2024</span> Our paper is published in <a href="#">Advances in Space Research</a>.</li>
+				<li><span class="news-date">12. Apr 2024</span> Welcome Qingeng Li!</li>
+				<li><span class="news-date">6. Dec 2023</span> Xueming Xiao will host a session at <a href="#">IEEE Industrial Electronics Society Annual Online Conference 2023</a>.</li>
+				<li><span class="news-date">4. Dec 2023</span> Xueming Xiao will give a session talk at <a href="#">首届航天领域高层次青年学者论坛 2023</a>.</li>
+				<li><span class="news-date">16. Oct 2023</span> Xueming Xiao will give a session talk at <a href="http://cssa2023.cssr.org.cn/meeting/cssa2023/"> CSSA 2023 </a>.</li>
+				<li><span class="news-date">17. Sep 2023</span> Xueming Xiao will host a session(AI for Space Robot Control and Situation Awareness) at <a href="https://www.icasd.cn/index/index.html"> International Conference on Aerospace Structural Dynamics 2023 </a>.</li>
+				<li><span class="news-date">08. Aug 2023</span> Our paper is published in <a href="https://ieeexplore.ieee.org/document/10210278">IEEE Transactions on Geoscience and Remote Sensing</a>.</li>
+				<li><span class="news-date">8. Jul 2023</span> Xueming Xiao will give a session talk at <a href="https://csiam-bdai2022.casconf.cn/">CSIAM-BDAI 2023</a>.</li>
+				<li><span class="news-date">25. Jun 2023</span> Welcome Yunting Gui!</li>
+				<li><span class="news-date">29. May 2023</span> Xueming Xiao will give a poster at 2023 <a href="https://www.icra2023.org/">IEEE International Conference on Robotics and Automation (ICRA)</a>.</li>
+				<li><span class="news-date">15. Apr 2023</span> Welcome Kaiyu Yang, Haoyuan He and Fei Wang!</li>
+				<li><span class="news-date">09. Jan 2023</span> Our paper is published in <a href="https://doi.org/10.1109/TGRS.2023.3235525">IEEE Transactions on Geoscience and Remote Sensing</a>.</li>
+				<li><span class="news-date">1. Sep 2022</span> Welcome Yifan Qi!</li>
+				<li><span class="news-date">04. Aug 2022</span> Our paper is published in <a href="https://doi.org/10.1016/j.actaastro.2022.08.002">Acta Astronautica</a>.</li>
+				<li><span class="news-date">30. Dec 2021</span> Our Robomaster team passed the technical review successfully.</li>
+				<li><span class="news-date">22. Nov 2021</span> Our paper submitted to IEEE TNNLS Special Issue is accepted.</li>
+				<li><span class="news-date">4. Nov 2021</span> Welcome the first 10 students join Robomaster team!</li>
+				<li><span class="news-date">1. Nov 2021</span> <b>Our Robomaster team CVIR is officially starting!</b></li>
+				<li><span class="news-date">15. Sept 2021</span> Welcome Haonan Xu!</li>
+				<li><span class="news-date">12. Sept 2021</span> <b>Our lab website is officially starting!</b></li>
+				<li><span class="news-date">01. Sept 2021</span> Welcome Yonggang and Hongyang!</li>
+				<li><span class="news-date">8. Apr 2020</span> More than 12 Bsc students joined our open laboratory programs!</li>
+				<li><span class="news-date">10. Mar 2020</span> Open laboratory program for Bsc students.</li>
+				<li><span class="news-date">16. Feb 2020</span> Our collaborator Prof. Meibao Yao gave a poster at <a href="https://doi.org/10.1109/ICRA40945.2020.9196574">2020 IEEE International Conference on Robotics and Automation (ICRA)</a>.</li>
+				<li><span class="news-date">15. Apr 2019</span> Our paper is published in <a href="https://doi.org/10.1016/j.asr.2019.01.005">Advances in Space Research</a>.</li>
+				<li><span class="news-date">08. Jul 2018</span> Xueming Xiao gave a poster at <a href="https://doi.org/10.1109/CEC.2018.8477665">2018 IEEE Congress on Evolutionary Computation (CEC)</a>.</li>
+				<li><span class="news-date">10. Oct 2018</span> Our paper is published in <a href="https://doi.org/10.1007/s11432-017-9277-x">Science China Information Sciences</a>.</li>
+
+
+
+
+				<!-- 你可以继续往下写更多新闻，只需JS每页显示12条 -->
+				<!-- 新闻结束 -->
+			</ul>
+			<div id="news-pagination" class="text-center" style="margin:20px 0;"></div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	© 2025 Computer Vision and Intelligent Robotics Lab @ CUST
+</footer>
+
+<!-- JS部分 -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+<script>
+	// ======== 简单静态分页 =========
+	$(function(){
+		var pageSize = 12;
+		var $news = $('#news-list > li');
+		var pageCount = Math.ceil($news.length / pageSize);
+
+		function showPage(page){
+			$news.hide();
+			$news.slice((page-1)*pageSize, page*pageSize).show();
+			// 分页栏
+			var pagHtml = '';
+			for(var i=1; i<=pageCount; i++){
+				pagHtml += '<button class="btn btn-sm btn-default'+(i==page?' active':'')+'" style="margin:0 2px;" data-p="'+i+'">'+i+'</button>';
+			}
+			$('#news-pagination').html(pagHtml);
+		}
+
+		// 默认显示第一页
+		showPage(1);
+		// 点击分页
+		$('#news-pagination').on('click', 'button', function(){
+			showPage(Number($(this).data('p')));
+			window.scrollTo({top:0,behavior:'smooth'});
+		});
+	});
+</script>
+</body>
+</html>

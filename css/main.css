@@ -1,0 +1,366 @@
+/* =============== 页面通用 =============== */
+body{
+    position:relative;margin:0;min-height:100vh;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    line-height:1.5;padding-top:50px;padding-bottom:3rem;
+}
+/* 全屏淡背景图 workshop页—— 改这里的路径即可换图 */
+body.workshop-page::before{
+    content:"";position:fixed;inset:0;
+    background:url("/images/workshop/123456.png") center/contain no-repeat;
+    opacity:.35;z-index:-1;pointer-events:none;
+}
+h1{font-size:28px;font-weight:700;margin:20px 0}
+h2{font-size:22px;font-weight:700;margin:30px 0 15px}
+h3{font-size:18px;font-weight:700;margin:20px 0 5px}
+footer{margin-top:40px;font-size:14px;color:#666;text-align:center}
+
+
+
+
+
+/* ========== 首页 index.html 专用样式 ========== */
+body.index-home .main-content h1 { font-size: 32px; font-weight: 700; margin-top: 0; }
+body.index-home .main-content p { font-size: 16px; }
+body.index-home .main-content .lab-logos {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 18px;
+}
+body.index-home .main-content .lab-logos img {
+    height: 54px;
+    margin-right: 0;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 12px #0001;
+    padding: 2px 10px;
+}
+body.index-home .swiper.mySwiper { margin-bottom: 25px; }
+
+
+
+
+
+/* 首页新闻栏 */
+body.index-home .side-news {
+    background: #fafbfd;
+    border-radius: 9px;
+    box-shadow: 0 2px 8px #0001;
+    padding: 25px 22px 8px 22px;
+    margin-top: 10px;
+}
+body.index-home .side-news h4 { font-weight: 700; font-size: 18px; margin: 0 0 16px 0;}
+body.index-home .side-news .news-list { list-style: none; padding: 0; margin: 0 0 8px 0;}
+body.index-home .side-news .news-list li {
+    margin-bottom: 15px; font-size: 15px; line-height: 1.5;
+    border-left: 3px solid #aed2fa; padding-left: 10px;
+}
+body.index-home .side-news .news-date { color: #3195e7; font-weight: 500; margin-right: 8px; font-size: 13px;}
+body.index-home .side-news .news-list a { color: #1d689b; text-decoration: underline; }
+body.index-home .side-news .news-more { font-size: 14px; color: #444; display: block; margin-top: 10px;}
+@media (max-width: 991px) {
+    body.index-home .main-content, body.index-home .side-news { margin-top: 20px;}
+    body.index-home .main-content .lab-logos { gap: 8px;}
+}
+
+
+
+
+/* ========== 新闻页 News.html 专用样式 ========== */
+body.news-page {
+    background: #f5f7fa;  /* 比如给新闻页浅灰底 */
+}
+/* 只影响 news.html 的大新闻列表 */
+.news-page .all-news {
+    padding: 0 0 20px 0;
+    list-style: none;
+}
+.news-page .all-news li {
+    border-bottom: 1px solid #ececec;
+    padding: 12px 0 10px 0;
+    font-size: 16px;
+    background: none;
+}
+.news-page .all-news .news-date {
+    display: inline-block;
+    min-width: 110px;
+    color: #0e7fc3;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 10px;
+}
+#news-pagination button.active {
+    background: #0e7fc3;
+    color: #fff;
+    border-color: #0e7fc3;
+}
+
+
+
+
+/*News 带图片的和不带图片的修改*/
+.news-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.news-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 18px 0 14px 0;
+    border-bottom: 1px solid #e8e8e8;
+    min-height: 54px;
+    font-size: 16px;
+    background: #fff;
+}
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-item .news-date {
+    color: #2262a7;
+    font-size: 15px;
+    min-width: 120px;
+    display: inline-block;
+    font-weight: 500;
+    margin-right: 18px;
+}
+
+.news-item.with-img {
+    align-items: center;
+    min-height: 110px;
+}
+.news-item .news-img {
+    width: 120px;
+    min-width: 90px;
+    height: 80px;
+    margin-right: 22px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.news-item .news-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.news-item .news-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.news-item .news-body .news-date {
+    margin-bottom: 3px;
+}
+@media (max-width: 767px) {
+    .news-item,
+    .news-item.with-img {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 14px 0 11px 0;
+        min-height: 44px;
+    }
+    .news-item .news-img {
+        margin: 0 0 10px 0;
+        width: 100%;
+        max-width: 320px;
+        height: 120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .news-item .news-body .news-date {
+        margin-bottom: 1px;
+    }
+}
+
+
+
+
+
+
+
+/*导航栏的Group部分*/
+    /* 鼠标悬停显示下拉菜单 */
+/* 右侧导航下拉菜单左对齐 Group 文本 */
+.navbar-nav > .dropdown .dropdown-menu {
+    left: 0;
+    right: auto;
+    min-width: 180px;           /* 根据内容可调整 */
+    margin-top: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 18px #0001;
+    padding: 8px 0;
+    border: 1px solid #eee;
+}
+
+.navbar-nav > .dropdown.open > .dropdown-menu,
+.navbar-nav > .dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu > li > a {
+    padding: 8px 24px 8px 18px;
+    font-size: 15px;
+    color: #444;
+    transition: background .18s;
+}
+
+.dropdown-menu > li > a:hover {
+    background: #f4f5f7;
+    color: #e55a00;
+}
+
+
+/* =================== Group Page =================== */
+.leader-page { max-width: 950px; margin: 38px auto 60px; }
+.leader-title {
+    font-size: 2.2em; font-weight: 700; letter-spacing: .02em;
+    margin-bottom: 32px; color: #222; border-left: 5px solid #258bf8;
+    padding-left: 14px;
+}
+
+.leader-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 6px 32px #dde7fa, 0 2px 6px #aaa2;
+    padding: 36px 22px 26px 22px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.leader-photo-wrap {
+    text-align: center;
+}
+.leader-photo {
+    width: 170px; height: 220px;
+    object-fit: cover; object-position: center;
+    border-radius: 16px;
+    box-shadow: 0 2px 20px #b5d7f6a0;
+    background: #f3f8fd;
+}
+
+.leader-info {
+    padding-top: 8px;
+}
+.leader-name {
+    font-size: 1.7em; font-weight: 600; color: #174378; margin-bottom: 10px;
+    margin-top: 0;
+}
+.leader-title-role {
+    font-size: 1.08em; color: #258bf8; margin-bottom: 12px;
+    font-weight: 500;
+}
+.leader-contact {
+    font-size: 1em; margin-bottom: 18px;
+}
+.leader-contact a { color: #2466b6; }
+.leader-desc {
+    font-size: 1.07em; color: #223; line-height: 1.65;
+}
+.leader-desc ul { margin: 8px 0 10px 20px; }
+
+@media (max-width: 768px) {
+    .leader-card { padding: 18px 6px 12px 6px; }
+    .leader-photo { width: 120px; height: 150px; }
+    .leader-title { font-size: 1.5em; padding-left: 7px; }
+}
+
+
+
+
+
+
+/* workshop中的演讲者 */
+.speaker{margin-bottom:40px}
+.speaker img{
+    width:160px;height:250px;object-fit:cover;object-position:center;
+    border-radius:6px;
+}
+
+/* workshop中的组织者图标 */
+.organizer{margin-bottom:25px}
+.organizer img{
+    width:100px;height:130px;object-fit:cover;object-position:center;
+    border-radius:6px;
+}
+
+/* workshop中的合作者图标 */
+.partner-logo {
+    max-height: 50px;
+    width: auto;
+    display: block;
+}
+
+.logo-bar {
+    display: flex;
+    justify-content: flex-start;  /* 左对齐 */
+    align-items: center;
+    gap: 8px;                     /* 间距自己调 */
+    margin-bottom: 18px;
+}
+.partner-logo1 {
+    max-height: 32px;
+    width: auto;
+    display: block;
+}
+@media (max-width: 767px) {
+    .partner-logo1 { max-height: 22px; }
+    .logo-bar { gap: 4px; }
+}
+
+
+
+
+
+
+/* 轮播图 */
+.mySwiper {
+    max-width: 900px;
+    margin: 40px auto 32px;
+    border-radius: 18px;
+    box-shadow: 0 4px 30px #0002;
+    overflow: hidden;
+    position: relative;
+}
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #222;
+    /* 统一高度，防止闪烁 */
+    height: 320px;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 裁剪到一致大小，不变形 */
+    border-radius: 0;
+}
+.slide-caption {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    background: linear-gradient(0deg,rgba(0,0,0,0.5) 60%,transparent 100%);
+    color: #fff;
+    padding: 18px 28px 10px 24px;
+    font-size: 20px;
+    border-radius: 0 0 18px 18px;
+    font-weight: 500;
+    letter-spacing: .02em;
+    z-index: 2;
+}
+/* 隐藏箭头 */
+.swiper-button-next, .swiper-button-prev { display: none !important; }
+
+/* 移动端垂直堆叠时头像底部留空 */
+@media(max-width:767px){
+    .speaker img,.organizer img{margin-bottom:15px}
+}

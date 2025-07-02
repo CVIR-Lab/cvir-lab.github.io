@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Publications - CVIR Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/jpg" href="/images/favicon/favicon.jpg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <style>
+    /* 只给 Publications 页面用 */
+    .pub-main {
+      max-width: 1100px;
+      margin: 45px auto 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 32px #0001;
+      padding: 15px 32px 36px 32px;
+    }
+
+    .pub-section-title {
+      font-size: 28px;
+      font-weight: 600;
+      margin: 30px 0 20px 0;
+      border-left: 5px solid #2069d6;
+      padding-left: 12px;
+      letter-spacing: 0.02em;
+      color: #144588;
+      background: linear-gradient(90deg,#f3f7fb 70%,#fff 100%);
+    }
+    .pub-list {
+      list-style: none;
+      margin: 0; padding: 0;
+    }
+    .pub-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 28px;
+      margin-bottom: 38px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 22px;
+    }
+    .pub-thumb {
+      width: 170px;
+      min-width: 130px;
+      height: 110px;
+      background: #f6f6f6;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 14px #0001;
+    }
+    .pub-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .pub-info {
+      flex: 1;
+    }
+    .pub-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #2c2c2c;
+      margin-bottom: 5px;
+    }
+    .pub-authors {
+      color: #666;
+      margin-bottom: 3px;
+      font-size: 15px;
+    }
+    .pub-journal {
+      font-style: italic;
+      color: #2069d6;
+      margin-bottom: 5px;
+    }
+    .pub-links {
+      margin-top: 7px;
+    }
+    .pub-links a {
+      font-size: 14px;
+      margin-right: 18px;
+      color: #2069d6;
+    }
+    @media (max-width: 767px) {
+      .pub-main { padding: 12px 2vw; }
+      .pub-item { flex-direction: column; gap: 14px; }
+      .pub-thumb { width: 100%; height: 130px; }
+    }
+  </style>
+</head>
+
+<body>
+<!-- 顶部导航栏（省略，直接复用你的主站导航） -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">CVIR Lab @ CUST</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-main">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="/Group" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Group <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="/Group/leader.html">Leader</a></li>
+            <li><a href="/Group/PhdAndMsc.html">PhD Student and Msc Student</a></li>
+            <li><a href="/Group/alumni.html">Alumni</a></li>
+            <li><a href="/Group/collaborators.html">Collaborators</a></li>
+            <li><a href="/Group/visandbsc.html">Bachelor students and Visitors</a></li>
+          </ul>
+        </li>
+        <li><a href="/research.html">Research</a></li>
+        <li class="active"><a href="/publications.html">Publications</a></li>
+        <li><a href="/dataset.html">Datasets</a></li>
+        <li><a href="/News.html">News and Events</a></li>
+        <li><a href="/workshop.html">Workshop</a></li>
+        <li><a href="https://cvirlab.cn2.quickconnect.cn">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- 主体内容区块 -->
+<div class="pub-main">
+  <div class="pub-section-title">Recent Articles</div>
+  <ul class="pub-list" id="pub-list">
+
+
+    <li class="pub-item">
+      <div class="pub-thumb">
+        <img src="/images/publicationpic/airformer.png" alt="Paper Thumbnail">
+      </div>
+      <div class="pub-info">
+        <div class="pub-title">AirFormer: Learning-Based Object Detection For Mars Helicopter</div>
+        <div class="pub-authors">Yifan Qi, Xueming Xiao, Meibao Yao, Yonggang Xiong, Lei Zhang, Hutao Cui</div>
+        <div class="pub-journal"><a href="https://doi.org/10.1109/JSTARS.2024.3492346">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing , 2024</a>></div>
+        <div class="pub-links">
+        </div>
+      </div>
+    </li>
+
+
+    <li class="pub-item">
+      <div class="pub-thumb">
+        <img src="/images/publicationpic/light4mars.png" alt="Paper Thumbnail">
+      </div>
+      <div class="pub-info">
+        <div class="pub-title">Light4Mars: A lightweight transformer model for semantic segmentation on unstructured environment like Mars</div>
+        <div class="pub-authors">Yonggang Xiong, Xueming Xiao, Meibao Yao, Hutao Cui, Yuegang Fu</div>
+        <div class="pub-journal"><a href="https://doi.org/10.1016/j.isprsjprs.2024.06.008">ISPRS Journal of Photogrammetry and Remote Sensing, 214,167-178,2024</a></div>
+        <div class="pub-links">
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </li>
+
+
+    <li class="pub-item">
+      <div class="pub-thumb">
+        <img src="/images/publicationpic/marsformer.png" alt="Paper Thumbnail">
+      </div>
+      <div class="pub-info">
+        <div class="pub-title">MarsFormer: Martian Rock Semantic Segmentation with Transformer</div>
+        <div class="pub-authors">Yonggang Xiongu, Xueming Xiao, Meibao Yao, Haiqaing Li, Hong Yang, Yuegang Fu</div>
+        <div class="pub-journal"><a href="https://ieeexplore.ieee.org/document/10210278">IEEE Transactions on Geoscience and Remote Sensing, 61,1-12,2023</a></div>
+        <div class="pub-links">
+        </div>
+      </div>
+    </li>
+
+
+    <li class="pub-item">
+      <div class="pub-thumb">
+        <img src="/images/publicationpic/rockformer.png" alt="Paper Thumbnail">
+      </div>
+      <div class="pub-info">
+        <div class="pub-title">RockFormer: A U-Shaped Transformer Network for Martian Rock Segmentation</div>
+        <div class="pub-authors">Haiqaing Liu, Meibao Yao, Xueming Xiao, Yonggang Xiong</div>
+        <div class="pub-journal"><a href="https://doi.org/10.1109/TGRS.2023.3235525">IEEE Transactions on Geoscience and Remote Sensing 61, 1-16, 2023</a></div>
+        <div class="pub-links">
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </li>
+
+    <li class="pub-item">
+      <div class="pub-thumb">
+        <img src="/images/publicationpic/icra2023model.jpg" alt="Paper Thumbnail">
+      </div>
+      <div class="pub-info">
+        <div class="pub-title">DC-MOT: Motion Deblurring and Compensation for Multi-Object Tracking in UAV Videos</div>
+        <div class="pub-authors">Song Cheng, Meibao Yao, Xueming Xiao</div>
+        <div class="pub-journal"><a href="https://www.icra2023.org/welcome">IEEE International Conference on Robotics and Automation (ICRA) (2023), ExCel London</a></div>
+        <div class="pub-links">
+        </div>
+      </div>
+    </li>
+
+
+    <li class="pub-item">
+      <div class="pub-thumb">
+        <img src="/images/publicationpic/tnnls.png" alt="Paper Thumbnail">
+      </div>
+      <div class="pub-info">
+        <div class="pub-title">A Kernel-Based Multi-Featured Rock Modeling and Detection Framework for a Mars Rover</div>
+        <div class="pub-authors">Xiao, X., Yao, M., Liu, H., Wang, J., Zhang, L., & Fu, Y</div>
+        <div class="pub-journal"><a href="https://doi.org/10.1109/TNNLS.2021.3131206">IEEE Transactions on Neural Networks and Learning Systems (2021)</a></div>
+        <div class="pub-links">
+        </div>
+      </div>
+    </li>
+
+
+    <li class="pub-item">
+      <div class="pub-thumb">
+        <img src="/images/publicationpic/twostage.png" alt="Paper Thumbnail">
+      </div>
+      <div class="pub-info">
+        <div class="pub-title">Safe Mars landing strategy: Towards lidar-based high altitude hazard detection</div>
+        <div class="pub-authors">Xueming Xiao, Meibao Yao, Hutao Cui, Yuegang Fu</div>
+        <div class="pub-journal"><a href="https://doi.org/10.1016/j.asr.2019.01.005">Advances in Space Research 63, 8 (2019)</a></div>
+        <div class="pub-links">
+        </div>
+      </div>
+    </li>
+
+    <li class="pub-item">
+      <div class="pub-thumb">
+        <img src="/images/publicationpic/5dof.png" alt="Paper Thumbnail">
+      </div>
+      <div class="pub-info">
+        <div class="pub-title">Auto rock detection via sparse-based background modeling for mars rover</div>
+        <div class="pub-authors">Xueming Xiao, Hutao Cui, Meibao Yao, Yuegang Fu, Wanqiang Qi</div>
+        <div class="pub-journal"><a href="https://doi.org/10.1109/CEC.2018.8477665">IEEE Congress on Evolutionary Computation (CEC). IEEE, 2018</a></div>
+        <div class="pub-links">
+        </div>
+      </div>
+    </li>
+
+
+    <li class="pub-item">
+      <div class="pub-thumb">
+        <img src="/images/publicationpic/rc.png" alt="Paper Thumbnail">
+      </div>
+      <div class="pub-info">
+        <div class="pub-title">Autonomous rock detection on mars through region contrast</div>
+        <div class="pub-authors">Xueming Xiao, Hutao Cui, Meibao Yao, Yang Tian</div>
+        <div class="pub-journal"><a href="https://doi.org/10.1016/j.asr.2017.04.028">Advances in Space Research 60, 3 (2017)</a></div>
+        <div class="pub-links">
+        </div>
+      </div>
+    </li>
+
+
+    <li class="pub-item">
+      <div class="pub-thumb">
+        <img src="/images/publicationpic/planefit.png" alt="Paper Thumbnail">
+      </div>
+      <div class="pub-info">
+        <div class="pub-title">Robust plane fitting algorithm for landing hazard detection</div>
+        <div class="pub-authors">Xueming Xiao, Hutao Cui, Yang Tian</div>
+        <div class="pub-journal"><a href="https://doi.org/10.1109/TAES.2015.140378">IEEE Transactions on Aerospace and Electronic Systems 51, 4 (2015)</a></div>
+        <div class="pub-links">
+        </div>
+      </div>
+    </li>
+
+    <!-- ... 更多论文 ... -->
+  </ul>
+  <div id="pub-pagination" class="text-center" style="margin:18px 0;"></div>
+</div>
+
+<footer>
+  © 2025 Computer Vision and Intelligent Robotics Lab @ CUST
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+
+
+<script>
+  // ======== 简单静态分页（每页5条）=========
+  $(function(){
+    var pageSize = 5;
+    var $pub = $('#pub-list > li');
+    var pageCount = Math.ceil($pub.length / pageSize);
+
+    function showPage(page){
+      $pub.hide();
+      $pub.slice((page-1)*pageSize, page*pageSize).show();
+      // 分页栏
+      var pagHtml = '';
+      for(var i=1; i<=pageCount; i++){
+        pagHtml += '<button class="btn btn-sm btn-default'+(i==page?' active':'')+'" style="margin:0 2px;" data-p="'+i+'">'+i+'</button>';
+      }
+      $('#pub-pagination').html(pagHtml);
+    }
+
+    // 默认显示第一页
+    showPage(1);
+    // 点击分页
+    $('#pub-pagination').on('click', 'button', function(){
+      showPage(Number($(this).data('p')));
+      window.scrollTo({top:$('.pub-main').offset().top-30,behavior:'smooth'});
+    });
+  });
+</script>
+
+</body>
+</html>
